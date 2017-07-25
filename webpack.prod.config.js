@@ -11,7 +11,7 @@ const plugins = [
   }),
   new HtmlWebpackPlugin({
     template: path.join(__dirname, './views/index.ejs'),
-    filename: '/index.ejs',
+    filename: './index.ejs',
     inject: true
   }),
   new webpack.LoaderOptionsPlugin({
@@ -44,7 +44,7 @@ module.exports = {
     vendor: ['react', 'react-dom']
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'public', 'dist'),
     filename: '[name].js',
     publicPath: '/dist/'
   },
