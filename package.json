@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --config webpack.config.js",
-    "stage": "NODE_ENV=production nohup.out supervisor -i node_modules --harmony server.js &",
+    "stage": "NODE_ENV=production nohup supervisor -i node_modules --harmony server.js &",
     "deploy": "NODE_ENV=production webpack --config webpack.prod.config.js"
   },
   "dependencies": {
